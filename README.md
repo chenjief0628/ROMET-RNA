@@ -166,4 +166,3 @@ The following is a useful example of input from the command line:
 ```bash
 soft_list=(DeepFoldRNA trRosettaRNA RhoFold RosettaFoldNA Drfold SimRNA)
 ```
-```
