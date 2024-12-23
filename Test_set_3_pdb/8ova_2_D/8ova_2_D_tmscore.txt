@@ -1,0 +1,2 @@
+RNA	DeepFoldRNA	trRosettaRNA	DRfold	RhoFold	RoseTTAFoldNA	RNAComposer	SimRNA	ROMET-RNA
+8ova_2_D	0.1822	0.2893	0.272	0.1629	0.1588	0.1519	0.083	0.1731
