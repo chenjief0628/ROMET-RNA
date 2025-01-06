@@ -62,43 +62,43 @@ We store the public release versions of ROMET-RNA on GitHub, a site that provide
 - **In order to run ROMET-RNA properly, users should properly set the variables in `run.sh`**
   - *Set "RNAalign_path" to the path of RNAalign, for example*
     ```bash
-    RNAalign_path="/home/zt/software/RNAalign/RNAalign"
+    RNAalign_path="path/software/RNAalign/RNAalign"
     ```
   - *Set "lociPARSE_path" to the path of lociPARSE, and set "lociPARSE_env" to the name of the python conda virtual environment for lociPARSE, for example*
     ```bash
-    lociPARSE_path="/home/zt/software/lociPARSE-main"
+    lociPARSE_path="path/software/lociPARSE-main"
     lociPARSE_env="lociPARSE"
     ```
 
 - **Set the variables in `gene_mate.sh`**
   - *Set "deepfoldrna_path" to the path of DeepFoldRNA, and set "deepfoldrna_env" to the name of the python conda virtual environment for DeepFoldRNA, for example*
     ```bash
-    deepfoldrna_path="/home/zt/DeepFoldRNA/"
+    deepfoldrna_path="path/DeepFoldRNA/"
     infernal_dir="${deepfoldrna_path}/bin/rMSA/infernal-1.1.4-linux-intel-gcc/binaries/"
-    deepfoldrna_env="/home/zt/DeepFoldRNA/conda_local/conda/envs/deepfoldrna"
+    deepfoldrna_env="path/DeepFoldRNA/conda_local/conda/envs/deepfoldrna"
     ```
   - *Set "trrosettarna_path" to the path of trRosettaRNA, and set "trrosettarna_env" to the name of the python conda virtual environment for trRosettaRNA, for example*
     ```bash
-    trrosettarna_path="/home/zt/trRosettaRNA"
+    trrosettarna_path="path/trRosettaRNA"
     trrosettarna_env="trRNA"
     ```
   - *Set "rhofold_path" to the path of RhoFold, and set "rhofold_env" to the name of the python conda virtual environment for RhoFold, for example*
     ```bash
-    rhofold_path='/home/zt/software/RhoFold/'
+    rhofold_path='path/software/RhoFold/'
     rhofold_env="rhofold"
     ```
   - *Set "rf2na_path" to the path of RoseTTAFoldNA, and set "rf2na_env" to the name of the python conda virtual environment for RoseTTAFoldNA, for example*
     ```bash
-    rf2na_path="/home/zt/software/RoseTTAFold2NA"
+    rf2na_path="path/software/RoseTTAFold2NA"
     rf2na_env="RF2NA"
     ```
   - *Set "drfold_path" to the path of DRfold, and set "drfold_env" to the name of the python conda virtual environment for DRfold, for example*
     ```bash
-    drfold_path="/home/zt/DRfold/"
+    drfold_path="path/DRfold/"
     ```
   - *Set "simrna_path" to the path of SimRNA, for example*
     ```bash
-    simrna_path="/home/zt/SimRNA_64bitIntel_Linux"
+    simrna_path="path/SimRNA_64bitIntel_Linux"
     ```
 
 # Explanation of Parameters and Useful Example
