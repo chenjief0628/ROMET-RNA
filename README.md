@@ -135,6 +135,18 @@ We store the public release versions of ROMET-RNA on GitHub, a site that provide
     ```bash
     drfold_path="path/DRfold/"
     ```
+  - *Set "drfold2_path" to the path of DRfold2, and set "drfold2_env" to the name of the python conda virtual environment for DRfold2, for example*
+    ```bash
+    drfold2_path="/path/DRfold2/"
+    ```
+  - *Set "boltz_path" to the path of Boltz, and set "boltz_env" to the name of the python conda virtual environment for Boltz, for example*
+    ```bash
+    boltz_path="/path/boltz/
+    ```
+  - *Set "protenix_path" to the path of Protenix, and set "protenix_env" to the name of the python conda virtual environment for Protenix, for example*
+    ```bash
+    protenix_path="/path/protenix/"
+    ```
   - *Set "simrna_path" to the path of SimRNA, for example*
     ```bash
     simrna_path="path/SimRNA_64bitIntel_Linux"
@@ -203,5 +215,5 @@ The following is a useful example of input from the command line:
 
 **NOTE: If there are changes in the software to be executed, please modify the “soft_list” line in `run.sh`, for example:**
 ```bash
-soft_list=(DeepFoldRNA trRosettaRNA RhoFold RosettaFoldNA Drfold SimRNA)
+soft_list=(DeepFoldRNA trRosettaRNA RhoFold RosettaFoldNA DRfold SimRNA)
 ```
