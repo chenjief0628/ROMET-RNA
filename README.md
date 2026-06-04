@@ -95,7 +95,7 @@ We store the public release versions of ROMET-RNA on GitHub, a site that provide
 
 - **Download**
   ```bash
-  git clone https://github.com/chenjief0628/ROMET-RNA/
+  git clone https://github.com/chenjief0628/ROMET-RNA.git
   ```
 
 - **In order to run ROMET-RNA properly, users should properly set the variables in `run.sh`**
