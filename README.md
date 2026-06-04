@@ -4,9 +4,35 @@
 Here we present a new meta-predicted server, ROMET-RNA, to model the 3D structure of RNAs from the primary sequence. Firstly, the six individual predicted servers are installed locally. This will allow us to control and tune our meta-server algorithms in a consistent manner and enable users to obtain comprehensive predictions from all servers quickly. Then, in addition to the construction of the best possible 3D models, the ROMET-RNA server also presents a score for ranking RNA 3D structures generated from different individual algorithms. In comparison to other structure prediction software and methods, ROMET-RNA can generate more accurate models than both threading templates and the peer methods benchmarked.
 
 # Installation
-## Prerequisites
+### Dependencies and environment challenges
 
-Note that ROMET-RNA depends on and uses several external programs and libraries.
+Note that ROMET-RNA depends on and uses several external programs and libraries.  
+Different tools require incompatible environments (specific CUDA / PyTorch / TensorFlow / compiler versions) and some need very large third‑party databases, which makes a single unified install impractical.
+
+To address this we provide a **Docker image** that integrates all locally runnable tools, each in its own conda environment. The Dockerfile and usage instructions are available in the [`Docker/`](./Docker) folder.
+
+### Tool access modes
+
+Response Table 12 (see also Methods) classifies every tool by access mode:
+
+| Access mode | Tools |
+|-------------|-------|
+| **Locally installable** (conda / Docker) | DeepFoldRNA, RoseTTAFoldNA, trRosettaRNA, RhoFold, DRfold, DRfold2, SimRNA, Boltz, Protenix (prediction); lociPARSE (scoring); RNAalign (scoring). All are bundled in our Docker image with isolated per‑tool conda environments. |
+| **External databases** (downloaded separately) | UniRef30, BFD, PDB templates, Rfam, RNAcentral – not redistributable; the user must download them. |
+| **Web‑server only** (batch script provided) | RNAComposer |
+| **Closed API** (account required) | AlphaFold3 (AlphaFold Server) |
+
+### Using the Docker image (recommended)
+
+The Docker image provides a ready‑to‑run environment for all **locally installable** tools listed above. No manual dependency resolution is required.  
+
+Please refer to the [`Docker/README`](./Docker/README) for build and run instructions.
+
+For **non‑local tools** (RNAComposer, AlphaFold Server) we document the exact submission protocol, and driver scripts are deposited in this GitHub repository.
+
+### Native installation (without Docker)
+
+If you prefer a native installation, the following external programs and libraries need to be downloaded and installed separately. **Linux or Unix‑like operating systems** are required.
 
 - **Linux or Unix-like operating systems**
 - **DeepFoldRNA**
@@ -24,7 +50,10 @@ Note that ROMET-RNA depends on and uses several external programs and libraries.
   https://zhanggroup.org/DRfold/DRfold.zip or
   https://github.com/leeyang/DRfold/
   ```
-  
+- **DRfold2**
+  ```
+  https://github.com/leeyang/DRfold2
+  ```  
 - **RhoFold**
   ```
   https://github.com/ml4bio/RhoFold
@@ -34,7 +63,17 @@ Note that ROMET-RNA depends on and uses several external programs and libraries.
   ```
   https://github.com/uw-ipd/RoseTTAFold2NA
   ```
-
+  
+- **Boltz**
+  ```
+  https://github.com/jwohlwend/boltz
+  ```
+  
+- **Protenix**
+  ```
+  https://github.com/bytedance/Protenix
+  ```
+  
 - **SimRNA**
   ```
   wget --no-check-certificate https://ftp.users.genesilico.pl/software/simrna/version_3.20/SimRNA_64bitIntel_Linux.tgz
