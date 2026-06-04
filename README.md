@@ -110,6 +110,7 @@ We store the public release versions of ROMET-RNA on GitHub, a site that provide
     ```
 
 - **Set the variables in `gene_mate.sh`**
+  Configure the installation paths and conda environments for the required RNA structure prediction tools.
   - *Set "deepfoldrna_path" to the path of DeepFoldRNA, and set "deepfoldrna_env" to the name of the python conda virtual environment for DeepFoldRNA, for example*
     ```bash
     deepfoldrna_path="path/DeepFoldRNA/"
@@ -141,7 +142,7 @@ We store the public release versions of ROMET-RNA on GitHub, a site that provide
     ```
   - *Set "boltz_path" to the path of Boltz, and set "boltz_env" to the name of the python conda virtual environment for Boltz, for example*
     ```bash
-    boltz_path="/path/boltz/
+    boltz_path="/path/boltz/"
     ```
   - *Set "protenix_path" to the path of Protenix, and set "protenix_env" to the name of the python conda virtual environment for Protenix, for example*
     ```bash
