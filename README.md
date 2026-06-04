@@ -13,7 +13,7 @@ To address this we provide a **Docker image** that integrates all locally runnab
 
 ### Tool access modes
 
-Response Table 12 (see also Methods) classifies every tool by access mode:
+Table (see also Methods) classifies every tool by access mode:
 
 | Access mode | Tools |
 |-------------|-------|
