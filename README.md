@@ -26,7 +26,7 @@ Table classifies every tool by access mode:
 
 The Docker image provides a ready‑to‑run environment for all **locally installable** tools listed above. No manual dependency resolution is required.  
 
-Please refer to the [`Docker/README`](./Docker/README) for build and run instructions.
+Please refer to the [`Docker/readme.md`](./Docker/readme.md) for build and run instructions.
 
 For **non‑local tools** (RNAComposer, AlphaFold Server) we document the exact submission protocol, and driver scripts are deposited in this GitHub repository.
 
