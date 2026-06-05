@@ -241,7 +241,7 @@ This repository uses and benchmarks several external prediction methods, evaluat
 ### Prediction methods included in benchmarking
 
 | Method | Source / URL | Reference |
-|---|---|---|---|
+|---|---|---|
 | AlphaFold3 | https://github.com/google-deepmind/alphafold3 | Abramson et al., 2024. *Nature*. DOI: [10.1038/s41586-024-07487-w](https://doi.org/10.1038/s41586-024-07487-w) |
 | DRfold | https://zhanggroup.org/DRfold | Li et al., 2023. *Nature Communications*. DOI: [10.1038/s41467-023-41368-6](https://doi.org/10.1038/s41467-023-41368-6) |
 | DRfold2 | https://github.com/leeyang/DRfold2 | Li et al., 2025. *Ab initio RNA structure prediction with composite language model and denoised end-to-end learning*. |
