@@ -241,28 +241,27 @@ This repository uses and benchmarks several external prediction methods, evaluat
 ### Prediction methods included in benchmarking
 
 | Method | Source / URL | Reference |
-|---|---|---|
+|---|---|---|---|
 | AlphaFold3 | https://github.com/google-deepmind/alphafold3 | Abramson et al., 2024. *Nature*. DOI: [10.1038/s41586-024-07487-w](https://doi.org/10.1038/s41586-024-07487-w) |
-| DRfold | https://zhanggroup.org/DRfold | Li et al., 2023. *Nature Communications*. DOI: [10.1038/s41467-023-41368-6](https://doi.org/10.1038/s41467-023-41368-6) |
+| DRfold | [Website](https://zhanggroup.org/DRfold) | Li, Y., Zhang, C., Feng, C. et al. Integrating end-to-end learning with deep geometrical potentials for ab initio RNA structure prediction. *Nature Communications* 14, 5745 (2023). DOI: [10.1038/s41467-023-41303-9](https://doi.org/10.1038/s41467-023-41303-9) |
 | DRfold2 | https://github.com/leeyang/DRfold2 | Li et al., 2025. *Ab initio RNA structure prediction with composite language model and denoised end-to-end learning*. |
 | Protenix | https://github.com/bytedance/Protenix | Protenix Team et al., 2026. *bioRxiv*. DOI: [10.64898/2026.02.05.703733](https://doi.org/10.64898/2026.02.05.703733) |
 | Boltz | https://github.com/jwohlwend/boltz | Wohlwend et al., 2024. *bioRxiv*. DOI: [10.1101/2024.11.19.624167](https://doi.org/10.1101/2024.11.19.624167); Passaro et al., 2025. *bioRxiv*. DOI: [10.1101/2025.06.14.659707](https://doi.org/10.1101/2025.06.14.659707) |
 | RhoFold | https://github.com/ml4bio/RhoFold | Shen et al., 2024. *Nature Methods*. |
-| trRosettaRNA | https://yanglab.qd.sdu.edu.cn/trRosettaRNA/ | Wang et al., 2023. *Nature Communications*. DOI: [10.1038/s41467-023-44327-7](https://doi.org/10.1038/s41467-023-44327-7) |
-| DeepRNAFold | https://zhanggroup.org/DeepFoldRNA | Pearce et al., 2022. *bioRxiv*. |
+| trRosettaRNA | https://yanglab.qd.sdu.edu.cn/trRosettaRNA/ | Wang et al., 2023. *Nature Communications*. DOI: [10.1038/s41467-023-42528-4](https://doi.org/10.1038/s41467-023-42528-4) |
+| DeepFoldRNA | https://zhanggroup.org/DeepFoldRNA | Pearce, R., Omenn, G. S., and Zhang, Y. De novo RNA tertiary structure prediction at atomic resolution using geometric potentials from deep learning. *bioRxiv* (2022). DOI: [10.1101/2022.05.15.491755](https://doi.org/10.1101/2022.05.15.491755) |
 | RoseTTAFoldNA | https://github.com/RoseTTAFold2NA | Baek et al., 2024. *Nature Methods*. DOI: [10.1038/s41592-023-02086-5](https://doi.org/10.1038/s41592-023-02086-5) |
 | SimRNA | https://genesilico.pl/SimRNAweb/ | Boniecki et al., 2016. *Nucleic Acids Research*. DOI: [10.1093/nar/gkv1479](https://doi.org/10.1093/nar/gkv1479) |
-| RNAComposer | http://rnacomposer.ibch.poznan.pl | Popenda et al., 2012. *Nucleic Acids Research*. DOI: [10.1093/nar/gks339](https://doi.org/10.1093/nar/gks339) |
+| RNAComposer | http://rnacomposer.ibch.poznan.pl | Antczak, M., Popenda, M., Zok, T. et al. New functionality of RNAComposer: an application to shape the axis of miR160 precursor structure. *Acta Biochimica Polonica* 63(4), 737–744 (2016). |
 
 ### Evaluation tools and auxiliary tools
 
 | Tool | Usage in this work | Reference |
 |---|---|---|
 | RNA-align | RNA 3D structure alignment and TM-scoreRNA calculation | Gong et al., 2019. *Bioinformatics*. DOI: [10.1093/bioinformatics/btz282](https://doi.org/10.1093/bioinformatics/btz282) |
-| lociPARSE | RNA 3D model quality scoring | Tarafder and Bhattacharya, 2024. *Journal of Chemical Information and Modeling*. |
-| RNAdvisor | RNA structural model quality assessment and benchmarking | Bernard et al., 2024. *Briefings in Bioinformatics*. |
+| lociPARSE alone | [DOI](https://doi.org/10.1021/acs.jcim.4c01621) | Tarafder, S., and Bhattacharya, D. lociPARSE: a locality-aware invariant point attention model for scoring RNA 3D structures. *Journal of Chemical Information and Modeling* 64, 8655–8664 (2024). DOI: [10.1021/acs.jcim.4c01621](https://doi.org/10.1021/acs.jcim.4c01621) |
+| RNAdvisor | [DOI](https://doi.org/10.1093/bib/bbae064) | Bernard, C., Postic, G., Ghannay, S., and Tahi, F. RNAdvisor: a comprehensive benchmarking tool for the measure and prediction of RNA structural model quality. *Briefings in Bioinformatics* 25(2), bbae064 (2024). DOI: [10.1093/bib/bbae064](https://doi.org/10.1093/bib/bbae064) |
 | SPOT-RNA | RNA secondary structure prediction | Singh et al., 2019. *Nature Communications*. DOI: [10.1038/s41467-019-13395-9](https://doi.org/10.1038/s41467-019-13395-9) |
-
 ### Datasets, databases, and MSA/homology-search resources
 
 | Resource | Usage in this work | Reference |
