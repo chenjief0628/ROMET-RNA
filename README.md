@@ -259,8 +259,8 @@ This repository uses and benchmarks several external prediction methods, evaluat
 | Tool | Usage in this work | Reference |
 |---|---|---|
 | RNA-align | RNA 3D structure alignment and TM-scoreRNA calculation | Gong et al., 2019. *Bioinformatics*. DOI: [10.1093/bioinformatics/btz282](https://doi.org/10.1093/bioinformatics/btz282) |
-| lociPARSE alone | [DOI](https://doi.org/10.1021/acs.jcim.4c01621) | Tarafder, S., and Bhattacharya, D. lociPARSE: a locality-aware invariant point attention model for scoring RNA 3D structures. *Journal of Chemical Information and Modeling* 64, 8655–8664 (2024). DOI: [10.1021/acs.jcim.4c01621](https://doi.org/10.1021/acs.jcim.4c01621) |
-| RNAdvisor | [DOI](https://doi.org/10.1093/bib/bbae064) | Bernard, C., Postic, G., Ghannay, S., and Tahi, F. RNAdvisor: a comprehensive benchmarking tool for the measure and prediction of RNA structural model quality. *Briefings in Bioinformatics* 25(2), bbae064 (2024). DOI: [10.1093/bib/bbae064](https://doi.org/10.1093/bib/bbae064) |
+| lociPARSE alone | RNA 3D model quality scoring | Tarafder, S., and Bhattacharya, D. lociPARSE: a locality-aware invariant point attention model for scoring RNA 3D structures. *Journal of Chemical Information and Modeling* 64, 8655–8664 (2024). DOI: [10.1021/acs.jcim.4c01621](https://doi.org/10.1021/acs.jcim.4c01621) |
+| RNAdvisor | RNA structural model quality assessment and benchmarking | Bernard, C., Postic, G., Ghannay, S., and Tahi, F. RNAdvisor: a comprehensive benchmarking tool for the measure and prediction of RNA structural model quality. *Briefings in Bioinformatics* 25(2), bbae064 (2024). DOI: [10.1093/bib/bbae064](https://doi.org/10.1093/bib/bbae064) |
 | SPOT-RNA | RNA secondary structure prediction | Singh et al., 2019. *Nature Communications*. DOI: [10.1038/s41467-019-13395-9](https://doi.org/10.1038/s41467-019-13395-9) |
 ### Datasets, databases, and MSA/homology-search resources
 
