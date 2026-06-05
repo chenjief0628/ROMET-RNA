@@ -40,54 +40,69 @@ If you prefer a native installation, the following external programs and librari
   https://zhanggroup.org/DeepFoldRNA/download.html or
   https://github.com/robpearc/DeepFoldRNA
   ```
+  Citation: see [Citations](#citations).
+  
 - **trRosettaRNA**
   ```
   https://yanglab.qd.sdu.edu.cn/trRosettaRNA/download/
   ```
+  Citation: see [Citations](#citations).
   
 - **DRfold**
   ```
   https://zhanggroup.org/DRfold/DRfold.zip or
   https://github.com/leeyang/DRfold/
   ```
+  Citation: see [Citations](#citations).
+  
 - **DRfold2**
   ```
   https://github.com/leeyang/DRfold2
-  ```  
+  ```
+  Citation: see [Citations](#citations).
+  
 - **RhoFold**
   ```
   https://github.com/ml4bio/RhoFold
   ```
+  Citation: see [Citations](#citations).
 
 - **RoseTTAFoldNA**
   ```
   https://github.com/uw-ipd/RoseTTAFold2NA
   ```
+  Citation: see [Citations](#citations).
   
 - **Boltz**
   ```
   https://github.com/jwohlwend/boltz
   ```
+  Citation: see [Citations](#citations).
   
 - **Protenix**
   ```
   https://github.com/bytedance/Protenix
   ```
+  Citation: see [Citations](#citations).
   
 - **SimRNA**
   ```
   wget --no-check-certificate https://ftp.users.genesilico.pl/software/simrna/version_3.20/SimRNA_64bitIntel_Linux.tgz
   ```
+  Citation: see [Citations](#citations).
 
 - **lociPARSE**
   ```
   https://github.com/Bhattacharya-Lab/lociPARSE
   ```
+  Citation: see [Citations](#citations).
 
 - **RNAalign**
+  Download:
   ```
   https://zhanggroup.org/RNA-align/download.html
   ```
+  Citation: see [Citations](#citations).
 
 ## Installation of ROMET-RNA
 
@@ -218,3 +233,50 @@ The following is a useful example of input from the command line:
 ```bash
 soft_list=(DeepFoldRNA trRosettaRNA RhoFold RosettaFoldNA DRfold SimRNA)
 ```
+
+## Citations
+
+This repository uses and benchmarks several external prediction methods, evaluation tools, MSA/homology-search pipelines, and public datasets/databases. If you use this repository, please cite the relevant original publications listed below. A complete BibTeX file is also provided in [`references.bib`](./references.bib).
+
+### Prediction methods included in benchmarking
+
+| Method | Source / URL | Reference |
+|---|---|---|---|
+| AlphaFold3 | https://github.com/google-deepmind/alphafold3 | Abramson et al., 2024. *Nature*. DOI: [10.1038/s41586-024-07487-w](https://doi.org/10.1038/s41586-024-07487-w) |
+| DRfold | https://zhanggroup.org/DRfold | Li et al., 2023. *Nature Communications*. DOI: [10.1038/s41467-023-41368-6](https://doi.org/10.1038/s41467-023-41368-6) |
+| DRfold2 | https://github.com/leeyang/DRfold2 | Li et al., 2025. *Ab initio RNA structure prediction with composite language model and denoised end-to-end learning*. |
+| Protenix | https://github.com/bytedance/Protenix | Protenix Team et al., 2026. *bioRxiv*. DOI: [10.64898/2026.02.05.703733](https://doi.org/10.64898/2026.02.05.703733) |
+| Boltz | https://github.com/jwohlwend/boltz | Wohlwend et al., 2024. *bioRxiv*. DOI: [10.1101/2024.11.19.624167](https://doi.org/10.1101/2024.11.19.624167); Passaro et al., 2025. *bioRxiv*. DOI: [10.1101/2025.06.14.659707](https://doi.org/10.1101/2025.06.14.659707) |
+| RhoFold | https://github.com/ml4bio/RhoFold | Shen et al., 2024. *Nature Methods*. |
+| trRosettaRNA | https://yanglab.qd.sdu.edu.cn/trRosettaRNA/ | Wang et al., 2023. *Nature Communications*. DOI: [10.1038/s41467-023-44327-7](https://doi.org/10.1038/s41467-023-44327-7) |
+| DeepRNAFold | https://zhanggroup.org/DeepFoldRNA | Pearce et al., 2022. *bioRxiv*. |
+| RoseTTAFoldNA | https://github.com/RoseTTAFold2NA | Baek et al., 2024. *Nature Methods*. DOI: [10.1038/s41592-023-02086-5](https://doi.org/10.1038/s41592-023-02086-5) |
+| SimRNA | https://genesilico.pl/SimRNAweb/ | Boniecki et al., 2016. *Nucleic Acids Research*. DOI: [10.1093/nar/gkv1479](https://doi.org/10.1093/nar/gkv1479) |
+| RNAComposer | http://rnacomposer.ibch.poznan.pl | Popenda et al., 2012. *Nucleic Acids Research*. DOI: [10.1093/nar/gks339](https://doi.org/10.1093/nar/gks339) |
+
+### Evaluation tools and auxiliary tools
+
+| Tool | Usage in this work | Reference |
+|---|---|---|
+| RNA-align | RNA 3D structure alignment and TM-scoreRNA calculation | Gong et al., 2019. *Bioinformatics*. DOI: [10.1093/bioinformatics/btz282](https://doi.org/10.1093/bioinformatics/btz282) |
+| lociPARSE | RNA 3D model quality scoring | Tarafder and Bhattacharya, 2024. *Journal of Chemical Information and Modeling*. |
+| RNAdvisor | RNA structural model quality assessment and benchmarking | Bernard et al., 2024. *Briefings in Bioinformatics*. |
+| SPOT-RNA | RNA secondary structure prediction | Singh et al., 2019. *Nature Communications*. DOI: [10.1038/s41467-019-13395-9](https://doi.org/10.1038/s41467-019-13395-9) |
+
+### Datasets, databases, and MSA/homology-search resources
+
+| Resource | Usage in this work | Reference |
+|---|---|---|
+| CASP15 blind tests | Benchmark dataset | Kryshtafovych et al., 2023. *Proteins*. DOI: [10.1002/prot.26515](https://doi.org/10.1002/prot.26515) |
+| RNA-Puzzles | Benchmark dataset | Cruz et al., 2012. *RNA*. DOI: [10.1261/rna.031054.111](https://doi.org/10.1261/rna.031054.111) |
+| Protein Data Bank, PDB | Source of experimentally determined structures | Berman et al., 2000. *Nucleic Acids Research*. DOI: [10.1093/nar/28.1.235](https://doi.org/10.1093/nar/28.1.235) |
+| rMSA | RNA sequence search and multiple sequence alignment generation | Zhang et al., 2023. *Journal of Molecular Biology*. DOI: [10.1016/j.jmb.2022.167904](https://doi.org/10.1016/j.jmb.2022.167904) |
+| RNAcentral | RNA sequence database | RNAcentral Consortium, 2021. *Nucleic Acids Research*. DOI: [10.1093/nar/gkaa921](https://doi.org/10.1093/nar/gkaa921) |
+| RNAcmap3-MARS | RNA homology search and RNA sequence database resource | Chen et al., 2024. *Genomics, Proteomics & Bioinformatics*. DOI: [10.1093/gpbjnl/qzae018](https://doi.org/10.1093/gpbjnl/qzae018) |
+| Rfam | RNA family database | Kalvari et al., 2021. *Nucleic Acids Research*. DOI: [10.1093/nar/gkaa1047](https://doi.org/10.1093/nar/gkaa1047) |
+
+### Notes
+
+For tools or datasets without a DOI or formal publication available at the time of writing, we cite the corresponding preprint, software repository, or official resource page where applicable.
+
+
